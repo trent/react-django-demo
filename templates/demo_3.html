@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Demo 3{% endblock %}
+
+{% block extra_body %}
+  <script type="text/jsx">
+  var url="{{request.GET.url}}";
+  </script>
+  <script type="text/jsx" src="{% static 'js/demo_3.js' %}"></script>
+{% endblock %}

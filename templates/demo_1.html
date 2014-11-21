@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Demo 1{% endblock %}
+
+{% block extra_body %}
+  <script type="text/jsx">
+  	var name='<strong>trent</strong>';
+    var Hello = React.createClass({
+      render: function() {
+        return <h1>Hello {this.props.name}!</h1>;
+      }
+    });
+   
+    React.render(<Hello name={name} />, document.getElementById('content'));
+  </script>
+{% endblock %}
